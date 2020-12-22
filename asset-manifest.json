@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/gift-website/static/css/main.83afbc9a.chunk.css",
+    "main.css": "/gift-website/static/css/main.88e07616.chunk.css",
     "main.js": "/gift-website/static/js/main.f6f4eb95.chunk.js",
     "main.js.map": "/gift-website/static/js/main.f6f4eb95.chunk.js.map",
     "runtime-main.js": "/gift-website/static/js/runtime-main.03396da3.js",
@@ -10,7 +10,7 @@
     "static/js/2.7626ec07.chunk.js.map": "/gift-website/static/js/2.7626ec07.chunk.js.map",
     "index.html": "/gift-website/index.html",
     "static/css/2.20aa2d7b.chunk.css.map": "/gift-website/static/css/2.20aa2d7b.chunk.css.map",
-    "static/css/main.83afbc9a.chunk.css.map": "/gift-website/static/css/main.83afbc9a.chunk.css.map",
+    "static/css/main.88e07616.chunk.css.map": "/gift-website/static/css/main.88e07616.chunk.css.map",
     "static/js/2.7626ec07.chunk.js.LICENSE.txt": "/gift-website/static/js/2.7626ec07.chunk.js.LICENSE.txt",
     "static/media/christmasBackground.e854a54f.jpg": "/gift-website/static/media/christmasBackground.e854a54f.jpg"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.03396da3.js",
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.7626ec07.chunk.js",
-    "static/css/main.83afbc9a.chunk.css",
+    "static/css/main.88e07616.chunk.css",
     "static/js/main.f6f4eb95.chunk.js"
   ]
 }
