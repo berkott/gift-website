@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gift-website/static/css/main.c28b6791.chunk.css",
-    "main.js": "/gift-website/static/js/main.b5629350.chunk.js",
-    "main.js.map": "/gift-website/static/js/main.b5629350.chunk.js.map",
+    "main.js": "/gift-website/static/js/main.10a6188b.chunk.js",
+    "main.js.map": "/gift-website/static/js/main.10a6188b.chunk.js.map",
     "runtime-main.js": "/gift-website/static/js/runtime-main.03396da3.js",
     "runtime-main.js.map": "/gift-website/static/js/runtime-main.03396da3.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/gift-website/static/css/2.20aa2d7b.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.7626ec07.chunk.js",
     "static/css/main.c28b6791.chunk.css",
-    "static/js/main.b5629350.chunk.js"
+    "static/js/main.10a6188b.chunk.js"
   ]
 }
