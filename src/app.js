@@ -24,10 +24,10 @@ class App extends React.Component{
             <Router history={history}>
                 <div>
                     <Switch>
-                        <Route exact path="/">
+                        <Route exact path="/gift-website/">
                             <Login db={this.db} history={history}/>
                         </Route>
-                        <Route path="/christmas">
+                        <Route path="/gift-website/christmas">
                             <Christmas db={this.db}/>
                         </Route>
                     </Switch>

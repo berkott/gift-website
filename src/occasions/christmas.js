@@ -1,13 +1,16 @@
 import './christmas.css';
 import React from 'react';
-import firebase from "firebase";
 import Container from "react-bootstrap/Container";
 import Spinner from "react-bootstrap/Spinner";
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 import Alert from "react-bootstrap/Alert";
 import christmasBackground from "./christmasBackground.jpg";
-import confetti from "./confetti.png";
+import christmasConfetti from "./christmasConfetti.png";
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+import 'firebase/storage';
 
 class Christmas extends React.Component{
     constructor(props) {
@@ -40,7 +43,7 @@ class Christmas extends React.Component{
                 this.setState({error: true, errorMessage: err.message, loading: false});
             });
 
-            firebase.storage().ref(userUID + '/coverImage.jpeg').getDownloadURL().then((url) => {
+            firebase.storage().ref(userUID + '/image.jpg').getDownloadURL().then((url) => {
                 this.setState({src: url, loading: false});
                 // console.log(url);
             }).catch((err) => {
@@ -70,7 +73,7 @@ class Christmas extends React.Component{
         let fallingConfetti = [];
         for (let i = 0; i < 15; i++) {
             let top = Math.floor(Math.random() * 100) + 10;
-            fallingConfetti.push(<Image src={confetti} style={
+            fallingConfetti.push(<Image src={christmasConfetti} style={
                 {
                     top: (-top) + "%",
                     left: (Math.floor(Math.random() * 100)) + "%",
@@ -85,12 +88,14 @@ class Christmas extends React.Component{
                 {fallingConfetti}
                 {alert}
                 <Image src={christmasBackground} className="background-image"/>
-                <Card body className="letter-card">
-                    {loading}
-                    <div dangerouslySetInnerHTML={{__html: this.state.message}}/>
-                    <br/>
-                    <Image src={this.state.src} className="letter-image"/>
-                </Card>
+                <div className="letter-card-div">
+                    <Card body className="letter-card">
+                        {loading}
+                        <div dangerouslySetInnerHTML={{__html: this.state.message}}/>
+                        <br/>
+                        <Image src={this.state.src} className="letter-image"/>
+                    </Card>
+                </div>
             </Container>
         );
     }

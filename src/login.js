@@ -5,8 +5,10 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Alert from "react-bootstrap/Alert";
-import firebase from "firebase";
 import { withRouter } from 'react-router-dom';
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
 
 class Login extends React.Component{
     constructor(props) {
@@ -20,12 +22,6 @@ class Login extends React.Component{
             loading: false
         };
     }
-
-    // componentWillUnmount() {
-    //     this.setState = (state,callback)=>{
-    //         return;
-    //     };
-    // }
 
     render() {
         let alert = "";
@@ -54,7 +50,7 @@ class Login extends React.Component{
                             <Form>
                                 <Form.Group controlId="formBasicEmail">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" onChange={(event) => this.setState({email: event.target.value})}/>
+                                    <Form.Control type="email" placeholder="Enter Email" onChange={(event) => this.setState({email: event.target.value})}/>
                                 </Form.Group>
 
                                 <Form.Group controlId="formBasicPassword">
@@ -79,7 +75,7 @@ class Login extends React.Component{
                 this.props.db.collection("users").doc(user.user.uid).get().then((doc) => {
                     this.setState({loading: false});
                     if (doc.exists) {
-                        this.props.history.push('/' + doc.data().occasion);
+                        this.props.history.push('/gift-website/' + doc.data().occasion);
                         // window.location.assign();
                     } else {
                         console.log("No such document!");

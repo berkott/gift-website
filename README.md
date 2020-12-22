@@ -1,70 +1,28 @@
-# Getting Started with Create React Login
+# Gift Website
+This website is a more exciting way to send letters digitally than 
+simply sending emails with long boring text. With the Gift Website, 
+there are customizable backgrounds, multiple logins, and even confetti!
 
-This project was bootstrapped with [Create React Login](https://github.com/facebook/create-react-app).
+## Creating your own Gift Website
+To create your own Gift Website, fork this repo, clone it locally, 
+run ``npm install``, customize your occasions, add a ``firebase.json`` file 
+and set up a firebase backend. Use Email auth for users, firestore, 
+and storage. For firestore, make a collection named users and documents 
+with each users UID as the name. Then add a message field and occasion 
+field. Write your message as if it were in a ``<p>`` tag (using ``<br/>`` 
+for carriage returns). For the photos, create a folder with each 
+users UID and add an image named image.jpg into it. Finally, make sure 
+the website is properly deployed based on gh pages (follow [this 
+guide](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f) if stuck)
 
-## Available Scripts
+## Adding a new occasion
+- In the occasions folder, add a new css, js, background, and confetti file. 
+- Edit the new files to your liking.
+- Fix the router in the ``app.js`` file.
+- Check the occasion field in your firestore documents.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React Login documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web Login
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Software Used:
+- React Js
+- Firebase
+- React-Bootstrap
+- React-Router

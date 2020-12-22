@@ -23,9 +23,14 @@
     width: 100%
 }
 
+.letter-card-div {
+    margin: auto;
+}
+
 .letter-card {
     z-index: 2;
     max-width: 80%;
+    margin: 30px auto;
 }
 
 @keyframes falling {
