@@ -1,0 +1,43 @@
+.centered-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 2;
+}
+
+.alert{
+    position: absolute !important;
+    top: 10px !important;
+    z-index: 1;
+}
+
+.background-image {
+    min-height: 100%;
+    min-width: 100%;
+    z-index: 0;
+    position: fixed;
+}
+
+.letter-image {
+    width: 100%
+}
+
+.letter-card {
+    z-index: 2;
+    max-width: 80%;
+}
+
+@keyframes falling {
+    100% {top:110%;}
+}
+
+.falling-image {
+    z-index: 1;
+    position: fixed;
+    width: 100px;
+
+    animation-name: falling;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

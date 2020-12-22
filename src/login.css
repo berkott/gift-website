@@ -1,0 +1,11 @@
+.centered-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.alert{
+  position: absolute !important;
+  top: 10px !important;
+}
