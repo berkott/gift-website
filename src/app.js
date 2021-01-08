@@ -5,7 +5,8 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import Christmas from "./occasions/christmas";
+import Birthday from "./occasions/birthday/birthday";
+import Christmas from "./occasions/christmas/christmas";
 import Login from "./login";
 import firebase from "firebase";
 import { createBrowserHistory } from 'history';
@@ -29,6 +30,9 @@ class App extends React.Component{
                         </Route>
                         <Route path="/gift-website/christmas">
                             <Christmas db={this.db}/>
+                        </Route>
+                        <Route path="/gift-website/birthday">
+                            <Birthday db={this.db}/>
                         </Route>
                     </Switch>
                 </div>

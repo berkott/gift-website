@@ -2,6 +2,7 @@
 This website is a more exciting way to send letters digitally than 
 simply sending emails with long boring text. With the Gift Website, 
 there are customizable backgrounds, multiple logins, and even confetti!
+![](christmasGift.png)
 
 ## Creating your own Gift Website
 To create your own Gift Website, fork this repo, clone it locally, 
@@ -26,3 +27,7 @@ guide](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)
 - Firebase
 - React-Bootstrap
 - React-Router
+
+## Commands
+``npm start`` for testing localhost
+``npm run deploy`` to deploy to gh-pages 

@@ -1,0 +1,48 @@
+.centered-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 2;
+}
+
+.alert{
+    position: absolute !important;
+    top: 10px !important;
+    z-index: 1;
+}
+
+.background-image {
+    min-height: 100%;
+    min-width: 100%;
+    z-index: 0;
+    position: fixed;
+}
+
+.letter-image {
+    width: 100%
+}
+
+.letter-card-div {
+    margin: auto;
+}
+
+.letter-card {
+    z-index: 2;
+    max-width: 80%;
+    margin: 30px auto;
+}
+
+@keyframes rising {
+    100% {top:-20%;}
+}
+
+.rising-image {
+    z-index: 1;
+    position: fixed;
+    width: 100px;
+
+    animation-name: rising;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
